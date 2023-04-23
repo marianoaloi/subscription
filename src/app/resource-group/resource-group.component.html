@@ -1,0 +1,23 @@
+<p>{{getUsername()}}</p>
+
+<ng-template #other_content>Loading {{msgloading}}...</ng-template>
+<div *ngIf="!loading ;else other_content">
+    <button type="button" class="btn btn-outline-primary" title="Export all JSON"
+    (click)="exportCosts()">
+Export JSON
+</button>
+</div>
+<!-- <div *ngFor="let item of (screenTable) as Cost">
+    <p>{{item|json}}</p>
+</div> -->
+<div #table id="pivot"></div>
+
+<!-- <table>
+    <tr *ngFor="let item of (screenTable) as Cost">
+        <td>{{item.name}}</td>
+        <td>{{item.rg}}</td>
+        <td>{{item.subscription}}</td>
+        <td>{{item.componente}}</td>
+        <td>{{item.value}}</td>
+    </tr>
+</table> -->

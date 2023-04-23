@@ -1,0 +1,19 @@
+
+<div *ngIf="!loginDisplay">
+    Não logado ainda
+ </div>
+
+<div *ngIf="loginDisplay">
+    <p>Login successful! [{{getUsername()}}]</p>
+</div>
+
+
+<h3 >Bem vindo ao single page de pegar custo</h3>
+<p>A idéia é ser simples, usando sua conta da Azure (Não tem uma conta de processo) 
+    vai ser feita consultas das subscrições que você tem acesso, os 3 ultimos meses de custos 
+    dessas subscrições dividido por resource grupe e componente, e por fim consultar as tags do 
+    resource group no qual poderá saber informações relevantes para sua tomada de decisão. </p>
+
+    <p>Foi escolhido essa forma de processo primeiro para que não haja troca de informações diferente de você usuário e o dominio da Azure, facilite a consultar as subscrições que você já tem.</p>
+
+    <p>Para começar terá que criar no botão login ou no link RG, eles vão começar o processo para que você autorize a usar sua conta nas consultas.</p>
